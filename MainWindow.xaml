@@ -1,0 +1,22 @@
+﻿<Window x:Class="QuickPass.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuickPass"
+        mc:Ignorable="d"
+        Title="QuickPass - 让您快速加密文本信息" Height="330" Width="350" ResizeMode="NoResize" WindowStyle="ToolWindow" Topmost="True" KeyDown="Window_KeyDown">
+    <Canvas HorizontalAlignment="Center" Height="267" VerticalAlignment="Center">
+
+        <RichTextBox x:Name="contentBox" Height="238" Width="330" Canvas.Top="-7" Canvas.Left="-165" MouseEnter="contentBox_MouseEnter">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <TextBox x:Name="keyBox" Height="30" Text="12345678" TextWrapping="Wrap" Width="165" Canvas.Top="237" Canvas.Left="-165" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged"/>
+        <Button Content="帮助" Height="30" Width="155" Canvas.Left="10" Canvas.Top="237"/>
+
+    </Canvas>
+</Window>
