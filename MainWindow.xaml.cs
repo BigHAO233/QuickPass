@@ -27,7 +27,7 @@ namespace QuickPass
             InitializeComponent();
         }
 
-        const string helpURL = "";
+        const string helpURL = "https://github.com/BigHAO233/QuickPass/blob/master/README.md";
         string key;
         string lastContent;
 
