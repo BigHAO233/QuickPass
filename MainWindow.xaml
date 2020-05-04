@@ -16,7 +16,7 @@
             </FlowDocument>
         </RichTextBox>
         <TextBox x:Name="keyBox" Height="30" Text="12345678" TextWrapping="Wrap" Width="165" Canvas.Top="237" Canvas.Left="-165" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged"/>
-        <Button Content="帮助" Height="30" Width="155" Canvas.Left="10" Canvas.Top="237"/>
+        <Button Content="帮助" Height="30" Width="155" Canvas.Left="10" Canvas.Top="237" Click="Button_Click"/>
 
     </Canvas>
 </Window>

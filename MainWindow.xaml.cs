@@ -27,6 +27,7 @@ namespace QuickPass
             InitializeComponent();
         }
 
+        const string helpURL = "";
         string key;
         string lastContent;
 
@@ -104,6 +105,11 @@ namespace QuickPass
                     SetRtf(DESEncryption.Decrypt(content, key));
                 }
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", helpURL);
         }
     }
 
